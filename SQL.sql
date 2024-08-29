@@ -66,3 +66,8 @@ constraint money check (income >25000 and invest <100000)
 insert into shop value(26000,99000);
 select * from shop;
 
+use College;
+insert into student value(1,"Rathod",90165),(2,"Mohan",1415),(3,"Rathod",1415),(4,"mohan",90165),(5,"Rathod",90165);
+
+select * from student where Name="Rathod" AND phone=90165;
+select * from student where id=4; 
