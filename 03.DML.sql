@@ -1,3 +1,4 @@
+/*Data manipulation language*/
 /*1. create database*/
 create database CRUD;
 
@@ -17,5 +18,14 @@ WHERE name = 'Anish';
 /*6. update name column*/
 update myDB set name='Rohan' where id=2;
 
-/*7. This code run where cluse in SQL if error coming*/
+/*7. Lock table*/
+LOCK TABLES myDB WRITE;
+
+/*8. insert some data*/
+INSERT INTO myDB (id, name, value) VALUES (1, 'Danish'),(2, 'mohit');
+
+/*9. unlock all table*/
+UNLOCK TABLES;
+
+/*10. This code run where cluse in SQL if error coming*/
 SET SQL_SAFE_UPDATES = 0;
